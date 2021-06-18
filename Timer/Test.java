@@ -12,11 +12,8 @@ public class Test {
         int min=Integer.parseInt(spl[0]);
         long sec=Long.parseLong(spl[1]);
         sec=sec+min*60;
-        Timer(sec);
-
-    }
-    static void Timer(long x){
-        TimerThread timerThread=new TimerThread(x*1000);
+        TimerThread timerThread=new TimerThread(sec*1000);
         timerThread.start();
+
     }
 }
