@@ -10,6 +10,7 @@ public class Test {
         scanner.close();
         FolderSizeCalculator fs = new FolderSizeCalculator(path);
         fs.start();
+        new FolderSizePrinter(fs).start();
     }
 }
 
