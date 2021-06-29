@@ -9,7 +9,7 @@ public class FolderSizeCalculator extends Thread {
         this.path = path;
     }
 
-    public void listFilesForFolder(File folder) {
+    public void listFilesForFolder(final File folder) {
 
         for (final File fileEntry : folder.listFiles()) {
 
